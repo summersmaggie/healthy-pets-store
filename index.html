@@ -17,20 +17,21 @@
         <p>Please select and answer the questions below, so we can find the best items to include in your pet's box of mystery toys and food!</p>
       </div>
 
-      <div class="petquestions">
-        <h3>What kind of pet do you have?</h3>
+      <div>
+        <form id="petform">
           <div class="form-group">
-            <input id="pettype" class="form-control" type="text">
+            <label for="pettype">What kind of pet do you have?</label>
+            <input id="pettype" type="text">
           </div>
 
-        <h3>What's your pet's name?<h3>
           <div class="form-group">
-            <input id="petname" class="form-control" type="text">
+            <label for="petname">What's your pet's name?</label>
+            <input id="petname" type="text">
           </div>
 
-        <h3>Check out our selection of toys!<h3>
           <div>
-            <select class="form-control" id="toys">
+            <label for="toys">Check out our selection of toys!</label>
+            <select id="toys">
               <option>Plush Teddy Bear</option>
               <option>Jumbler Ball</option>
               <option>Bones and Chews</option>
@@ -38,37 +39,38 @@
             </select>
           </div>
 
-        <h3>What kind of food are you looking for?</h3>
           <div>
-            <select class="form-control" id="food">
+            <label for="food">What kind of food are you looking for?</label>
+            <select id="food">
               <option>Organic Dog Food</option>
               <option>Organic Cat Food</option>
               <option>Raw Dog Food</option>
               <option>Raw Cat Food</option>
             </select>
           </div>
-      </div>
 
-      <div class="personalquestions">
-        <p>Please answer these quick questions so we can send your package quickly and with care.</p>
-        <h3>What's your name?</h3>
+          <p>Please answer these quick questions so we can send your package quickly and with care.</p>
+
           <div class="form-group">
-            <input id="name" class="form-control" type="text">
+            <label for="name">What's your name?</label>
+            <input id="name" type="text">
           </div>
 
-        <h3>What's your address?</h3>
           <div class="form-group">
-            <input id="address" class="form-control" type="text">
+            <label for="address">What's your address?</label>
+            <input id="address" type="text">
           </div>
-      </div>
 
-      <button id="btn">Purchase!</button>
-    </div>
+          <button id="btn">Purchase!</button>
+        </form>
+      </div>
 
     <div id="receipt">
-      <h4>Thanks for shopping with us! Here's your receipt:</h4>
-      <p>You purchased <span class=toys></span> and <span class="food"></span> for your <span class="pettype"></span> , <span class="petname">. Thank you! 
+      <h4>Thanks for shopping with us, <span class="name"></span>! Here's your receipt:</h4>
+      <p>You purchased <span class="toys"></span> and <span class="food"></span> for your <span class="pettype"></span>, <span class="petname">. Thank you!</p>
     </div>
+
+  </div>
 
   </body>
 </html>
